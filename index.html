@@ -4,11 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dxelor</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Practica</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <header class="header" id="inicio">
+        <img src="./img/menu.svg" alt="icono Menú" class="menu">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Galeria</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contactos</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Practica</h1>
+            <p class="copy">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="./img/explosion_isometric.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt maxime doloremque excepturi laudantium, similique fuga tempora voluptatum reiciendis iste!</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt maxime doloremque excepturi laudantium, similique fuga tempora voluptatum reiciendis iste!</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt maxime doloremque excepturi laudantium, similique fuga tempora voluptatum reiciendis iste!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="galerys" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img class="img-galeria" src="./img/alexas_fotos--mFVHEzRvsQ-unsplash.jpg" alt="imagen de galeria">
+                    <img class="img-galeria" src="./img/rod-long-adfiN5E_RP0-unsplash.jpg" alt="imagen de galeria">
+                    <img class="img-galeria" src="./img/the-creative-exchange-N9aM5dGxuvk-unsplash.jpg" alt="imagen de galeria">
+                    <img class="img-galeria" src="./img/alexas_fotos--mFVHEzRvsQ-unsplash.jpg" alt="imagen de galeria">
+                    <img class="img-galeria" src="./img/rod-long-adfiN5E_RP0-unsplash.jpg" alt="imagen de galeria">
+                    <img class="img-galeria" src="./img/the-creative-exchange-N9aM5dGxuvk-unsplash.jpg" alt="imagen de galeria">
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="img/x.svg" alt="" class="close">
+            <img src="./img/baptiste.jpg" alt="" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="./img/factory_worker_isometric.svg" alt="">
+                    <h3 class="n-expert">Analitycs</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="./img/factory_worker_isometric.svg" alt="">
+                    <h3 class="n-expert">SEO</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="./img/factory_worker_isometric.svg" alt="">
+                    <h3 class="n-expert">Security</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">DxelorPracticaWeb</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, iste?
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/lightbox.js"></script>
 </body>
 
 </html>
