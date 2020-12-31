@@ -297,13 +297,12 @@ footer {
 }
 
 .social-media-icon {
-    display: inline-block;
+    text-decoration: none;
     margin-left: 20px;
     width: 60px;
     height: 60px;
     border: 1px solid #fff;
     border-radius: 50%;
-    text-align: center;
     color: #fff;
 }
 
@@ -390,6 +389,7 @@ footer {
         justify-content: space-evenly;
     }
     .social-media-icon {
+        align-self: center;
         margin-left: 0;
     }
     .social-media i {
