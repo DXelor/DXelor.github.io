@@ -205,6 +205,10 @@ main,
     transform: translate(0);
 }
 
+.hide {
+    display: none;
+}
+
 .agregar-imagen {
     object-fit: cover;
     width: 60%;
