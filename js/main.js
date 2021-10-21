@@ -1,5 +1,5 @@
 const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-navegacion');
+const menuNav = document.querySelector('.nav-menu');
 
 menu.addEventListener('click', () => {
     menuNav.classList.toggle("spread")

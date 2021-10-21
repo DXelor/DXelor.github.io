@@ -15,7 +15,7 @@ body {
     background-position: center;
 }
 
-.contenedor {
+.container {
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
@@ -56,7 +56,7 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(152, 86, 165, 0.603);
 }
 
-.menu-navegacion {
+.nav-menu {
     position: fixed;
     font-size: 30px;
     top: 0;
@@ -71,7 +71,7 @@ body {
     transform: translate(110%);
 }
 
-.menu-navegacion a {
+.nav-menu a {
     width: 90%;
     height: 40%;
     margin-top: 10px;
@@ -83,7 +83,7 @@ body {
     text-shadow: 0 0 3px #FF0000, 0 0 5px #00ff55;
 }
 
-.menu-navegacion a:hover {
+.nav-menu a:hover {
     width: 300px;
     border-radius: 50px;
     background-color: rgba(255, 248, 248, 0.212);
@@ -96,10 +96,19 @@ body {
     transform: translate(0);
 }
 
-.titulo {
+.title {
     font-size: 260px;
     text-shadow: 0px 0px 5px #00ffff, 7px 7px 10px #3d3d3d88;
     margin-bottom: 15px;
+}
+@keyframes sizetitle {
+    0%   {font-size: 260px;}
+    50%   {font-size: 290px; color: #ceda65;}
+    100% {font-size: 260px;}
+}
+.title:hover{
+    animation-name: sizetitle;
+    animation-duration: 2s;
 }
 
 .copy {
@@ -111,7 +120,7 @@ body {
 
 /*Servicios*/
 
-.subtitulo {
+.subtitle {
     text-align: center;
     font-weight: 300;
     color: rgb(228, 228, 228);
@@ -121,8 +130,15 @@ body {
 }
 
 main,
-.galerys {
+.gallerys {
     background: rgba(49, 54, 3, 0.548);
+}
+
+#imgService{
+    transition: width 2s ease-in-out    ;
+}
+#imgService:hover{
+    width: 400px;
 }
 
 .services {
@@ -131,18 +147,18 @@ main,
     text-shadow: 0px 0px 10px #8a8a8a8e;
 }
 
-.contenedor-servicio {
+.service-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.contenedor-servicio img {
+.service-container img {
     width: 40%;
 }
 
-.checklist-servicio {
+.service-checklist {
     width: 40%;
 }
 
@@ -168,23 +184,27 @@ main,
     margin-right: 7px;
 }
 
-.galerys {
+.gallerys {
     background: #f2f2f23a;
 }
 
-.contenedor-galeria {
+.container-gallery {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.img-galeria {
+.img-gallery {
     object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(162, 218, 31, 0.247);
     cursor: pointer;
+}
+
+.img-gallery:hover {
+    box-shadow: 0 0 6px 5px rgb(163, 163, 163);
 }
 
 .imagen-light {
@@ -247,18 +267,24 @@ main,
 .cont-expert {
     width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
+
 
 .cont-expert img {
     width: 50%;
     display: block;
     margin: 0 auto;
+    transition: transform 1s;
+}
+
+.cont-expert img:hover {
+    transform: rotate(360deg);
 }
 
 .n-expert {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: 400;
 }
 
@@ -360,17 +386,17 @@ footer {
 /* responsivo */
 
 @media screen and (max-width:800px) {
-    .menu-navegacion {
+    .nav-menu {
         width: 50vw;
     }
-    .titulo {
+    .title {
         font-size: 40px;
     }
-    .contenedor-servicio img {
+    .service-container img {
         width: 80%;
         margin-bottom: 40px;
     }
-    .checklist-servicio {
+    .service-checklist {
         width: 80%;
     }
     .service {
@@ -379,7 +405,7 @@ footer {
     .agregar-imagen {
         width: 80%;
     }
-    .img-galeria {
+    .img-gallery {
         width: 45%;
     }
     .cont-expert {
@@ -407,23 +433,23 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-    .menu-navegacion {
+    .nav-menu {
         width: 65vw;
     }
     .menu {
         top: 20px;
         right: 20px;
     }
-    .titulo {
+    .title {
         font-size: 30px;
     }
-    .subtitulo {
+    .subtitle {
         font-size: 30px;
     }
     .agregar-imagen {
         width: 95%;
     }
-    .img-galeria {
+    .img-gallery {
         width: 95%;
     }
     .social-media {
