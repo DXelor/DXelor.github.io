@@ -81,6 +81,7 @@ body {
     justify-content: center;
     text-decoration: none;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #00ff55;
+    transition: font-size 1s;
 }
 
 .nav-menu a:hover {
@@ -89,6 +90,7 @@ body {
     background-color: rgba(255, 248, 248, 0.212);
     box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.205), inset 0 0 10px rgba(150, 144, 144, 0.158);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.329);
+    font-size: 55px;
     text-shadow: 0 0 3px #00a2ff, 0 0 5px #ffd900;
 }
 
@@ -331,14 +333,19 @@ footer {
     margin-left: 20px;
     width: 60px;
     height: 60px;
-    border: 1px solid #fff;
     border-radius: 50%;
     color: #fff;
+    transition: width 1s;
 }
 
+.social-media-icon i{
+    box-shadow: 0 0 2px white;
+}
+
+
 .social-media-icon:hover {
-    background: rgba(255, 255, 255, 0.658);
     color: #a18cd1;
+    width: 68px;
 }
 
 .bxl-facebook {
