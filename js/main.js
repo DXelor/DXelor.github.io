@@ -1,13 +1,12 @@
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.nav-menu');
+import { eventos } from "./events.js";
+import { lightbox } from "./lightbox.js";
+import { contactFormValidations } from "./validation.js";
 
-menu.addEventListener('click', () => {
-    menuNav.classList.toggle("spread")
-    console.log("hiciste click")
+const d = document;
+
+d.addEventListener("DOMContentLoaded", (e)=>{
+    contactFormValidations();
+    lightbox();
+    eventos();
 })
 
-window.addEventListener('click', (e) => {
-    if (menuNav.classList.contains('spread') && e.target != menuNav && e.target != menu) {
-        menuNav.classList.toggle("spread")
-    }
-})

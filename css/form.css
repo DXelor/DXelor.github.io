@@ -1,3 +1,15 @@
+
+body{
+    background: linear-gradient(90deg, #b5cab8 0%, #bfd1f0 100%);
+}
+
+header{
+    display: grid;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(52, 105, 88);
+}
+
 .contact-form{
     --form-ok-color: rgb(105, 211, 105);
     --form-error-color: rgb(223, 82, 0);
@@ -13,6 +25,7 @@
     width: 100%;
 }
 
+
 .contact-form textarea{
     resize: none;
 }
@@ -21,17 +34,26 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    color: rgb(52, 105, 88);
+    margin-top: -1rem;
+}
+.contact-form input{
+    background-color: rgb(154, 182, 172);
 }
 
 .contact-form-input, .contact-form textarea{
     font-size: 1rem;
     font-family: sans-serif;
+    background-color: rgb(154, 182, 172);
 }
 
-.contact-form-input[type="submit"]{
-    width: 50%;
-    font-weight: bold;
+.contact-form input[type="submit"]{
+    text-align: center;
+    background-color: rgb(78, 126, 78);
+    width: 15rem;
     cursor: pointer;
+    font-weight: bold;
+    color: rgb(233, 245, 233);
 }
 
 .contact-form *::placeholder{
@@ -44,7 +66,6 @@
 
 .contact-form [required]:invalid{
     border: thin solid var(--form-error-color);
-
 }
 
 .contact-form-error{

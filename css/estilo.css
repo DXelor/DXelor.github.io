@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
@@ -16,59 +16,59 @@ body {
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
-    overflow: hidden;
     margin: auto;
+    overflow: hidden;
     padding: 60px 0;
+    width: 90%;
 }
 
 .header {
-    height: 100vh;
     background: rgba(0, 0, 0, 0.336);
+    height: 100vh;
 }
 
 .head {
-    text-align: center;
-    padding: 0;
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
 }
 
 .head a {
-    text-decoration: none;
     color: rgba(231, 224, 209, 0.685);
+    text-decoration: none;
 }
 
 .menu {
-    position: fixed;
-    top: 30px;
-    right: 30px;
     background: #fff;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(152, 86, 165, 0.603);
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 40px;
 }
 
 .nav-menu {
-    position: fixed;
-    font-size: 30px;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    height: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    font-size: 30px;
+    height: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    position: fixed;
+    right: 0;
     transition: transform .3s ease-in-out;
     transform: translate(110%);
+    top: 0;
+    width: 30vw;
 }
 
 .nav-menu a {
@@ -192,35 +192,38 @@ main,
 
 .container-gallery {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .img-gallery {
     object-fit: cover;
-    width: 30%;
-    display: block;
+    border-radius: 15px;
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(162, 218, 31, 0.247);
     cursor: pointer;
+    transition: width 200ms, height 200ms;
+    width: 380px;
 }
 
 .img-gallery:hover {
     box-shadow: 0 0 6px 5px rgb(163, 163, 163);
+    width: 370px;
+    height: 210px;
 }
 
 .imagen-light {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
     transform: translate(100%);
     transition: transform .3s ease-in-out;
+    width: 100%;
 }
 
 .show {
@@ -232,11 +235,11 @@ main,
 }
 
 .agregar-imagen {
-    object-fit: cover;
-    width: 60%;
     border-radius: 10px;
+    object-fit: cover;
     transform: scale(0);
     transition: transform .3s .2s;
+    width: 60%;
 }
 
 .showImage {
@@ -244,40 +247,40 @@ main,
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
     cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
 }
 
 
 /*Expertos*/
 
 .experts {
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
     align-items: baseline;
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
 }
 
 .experts a {
-    text-decoration: none;
     color: wheat;
+    text-decoration: none;
 }
 
 .cont-expert {
-    width: 30%;
-    text-align: center;
     margin-bottom: 50px;
+    text-align: center;
+    width: 30%;
 }
 
 
 .cont-expert img {
-    width: 50%;
     display: block;
     margin: 0 auto;
     transition: transform 1s;
+    width: 50%;
 }
 
 .cont-expert img:hover {
@@ -286,8 +289,8 @@ main,
 
 .n-expert {
     display: inline-block;
-    margin-top: 60px;
     font-weight: 400;
+    margin-top: 60px;
 }
 
 
@@ -300,22 +303,22 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
+    justify-content: space-between;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .contact-us {
-    width: 40%;
     color: aliceblue;
+    width: 40%;
 }
 
 .brand {
-    font-weight: 500;
     font-size: 40px;
+    font-weight: 500;
 }
 
 .brand+p {
@@ -323,28 +326,28 @@ footer {
 }
 
 .social-media {
-    width: 50%;
     display: flex;
     justify-content: flex-end;
     margin-right: 5px;
+    width: 50%;
 }
 
 .social-media-icon {
-    text-decoration: none;
-    margin-left: 15px;
-    width: 60px;
-    height: 60px;
     color: #fff;
+    height: 60px;
+    margin-left: 15px;
+    text-decoration: none;
     transition: margin-top 200ms, box-shadow 200ms;
+    width: 60px;
 }
 
 .social-media-icon i{
     border-radius: 30px;
     box-shadow: inset 0 0 2px white, 0 0 3px white;
-    text-shadow: 3px 0 2px rgb(31, 173, 230) ;
-    text-align: center;
     font-size: 30px;
     line-height: 60px;
+    text-align: center;
+    text-shadow: 3px 0 2px rgb(31, 173, 230) ;
     width: 60px;
 }
 
@@ -359,12 +362,12 @@ footer {
 }
 
 .line {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
     background: #f2f2f2;
+    height: 2px;
+    margin: 0 auto;
     margin-bottom: 60px;
+    max-width: 1200px;
+    width: 90%;
 }
 
 
@@ -387,8 +390,8 @@ footer {
         animation-duration: 2s;
     }
     .service-container img {
-        width: 80%;
         margin-bottom: 40px;
+        width: 80%;
     }
     .service-checklist {
         width: 80%;
@@ -409,8 +412,8 @@ footer {
         justify-content: center;
     }
     .social-media {
-        width: 80%;
         justify-content: space-evenly;
+        width: 80%;
     }
     .social-media-icon {
         align-self: center;
@@ -420,9 +423,9 @@ footer {
         margin-left: 0;
     }
     .contact-us {
+        margin-bottom: 40px;
         text-align: center;
         width: 80%;
-        margin-bottom: 40px;
     }
 }
 
@@ -431,8 +434,8 @@ footer {
         width: 65vw;
     }
     .menu {
-        top: 20px;
         right: 20px;
+        top: 20px;
     }
     .title {
         font-size: 60px;
