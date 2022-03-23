@@ -2,10 +2,10 @@
 
 This is mi landing page made in HTML5, CSS3 and Javascript.
 
-#Details
+# Details
 
 the purpouse of this landing page is be a door of my information and projects.
 
-#Info
+# Info
 
 need update.
